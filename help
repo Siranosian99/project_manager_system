@@ -1,12 +1,11 @@
-Önerdiğim sıra:
-1. Tamamlandı
-    User
-2. Project
-3. Task
-4. Comment
-5. Team
-6. TeamMember
-7. TimeLog
-8. Attachment
-9. Notification
-10. Label
+MODELS:
+1. User -
+2. Project -
+3. Task -
+4. Comment -
+5. Team -
+6. TeamMember - 
+7. TimeLog - 
+8. Attachment - 
+9. Notification - 
+10. Label -
