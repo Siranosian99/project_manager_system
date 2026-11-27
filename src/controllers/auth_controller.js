@@ -1,5 +1,6 @@
 //authController.js: Register, Login, Verify Email, Reset Password, Refresh Token, Logout.
 import express from "express";
+import User from "../models/user_model.js";
 export async function register(req, res) {
   try {
     const { name, email, password } = req.body;
@@ -14,6 +15,7 @@ export async function register(req, res) {
       email: email,
       password: password,
     });
+    res.status(200).json(user);
   } catch (e) {
     return res.status(500).json({
       message: "Internal Server Error",
@@ -40,4 +42,3 @@ export async function logOut() {
   try {
   } catch (e) {}
 }
-

@@ -1,11 +1,91 @@
 MODELS:
+
 1. User -
 2. Project -
 3. Task -
 4. Comment -
 5. Team -
-6. TeamMember - 
-7. TimeLog - 
-8. Attachment - 
-9. Notification - 
+6. TeamMember -
+7. TimeLog -
+8. Attachment -
+9. Notification -
 10. Label -
+
+CONTROLLERS:
+
+1. Authentication
+
+- register
+- login
+- logout
+- refreshToken
+- getMe
+- updatePassword
+
+2. User
+
+- getAllUsers
+- getUserById
+- updateUser
+- deleteUser
+- updateProfile
+- updateUserRole
+
+3. Project
+
+- createProject
+- getAllProjects
+- getProjectById
+- updateProject
+- deleteProject
+- addProjectMember
+- removeProjectMember
+- updateProjectStatus
+
+4. Task
+
+- createTask
+- getAllTasks
+- getTaskById
+- updateTask
+- deleteTask
+- assignTask
+- updateTaskStatus
+- updateTaskPriority
+- updateTaskDeadline
+
+5. Comment
+
+- createComment
+- getTaskComments
+- updateComment
+- deleteComment
+
+6. Dashboard
+
+- getDashboardStats
+- getProjectStats
+- getTaskStats
+- getUserTaskStats
+
+7. Notification
+
+- getNotifications
+- markAsRead
+- markAllAsRead
+- deleteNotification
+
+8. Activity
+
+- getProjectActivities
+- getUserActivities
+
+9. Team
+
+- createTeam
+- getAllTeams
+- getTeamById
+- updateTeam
+- deleteTeam
+- addTeamMember
+- removeTeamMember

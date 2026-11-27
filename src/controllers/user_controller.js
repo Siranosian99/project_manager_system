@@ -1,5 +1,5 @@
-//- userController.js: Get Me, Update Profile, Update Avatar, Delete Account, Get User By ID.
 import express from "express";
+import User from "../models/user_model";
 export async function getUser(req, res) {
   const userId = req.user.id;
   const email = req.body.email.toLowerCase();
