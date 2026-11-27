@@ -3,11 +3,13 @@ import Task from "../models/task_model.js"
 export async function createTask(req, res) {
   try {
     const {name,description,project,assignedTo,createdBy,status,priority,startDate,dueDate,completedAt}=req.body
+    const task=  Task.create()
     if(){}
   } catch (e) {
-    res.status(500).json({
-      message:,
-    })
+    return res.status(500).json({
+      success: false,
+      message: "Internal Server Error",
+    });
   }
 }
 export async function getAllTasks() {
